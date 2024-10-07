@@ -25,6 +25,8 @@ const students = [
 
 // 1. Log each student’s name and grade
 
+students.forEach((student) => console.log(student.name, student.grade))
+
 ```
 
 ### Part 2: Practice with `filter`
@@ -33,14 +35,15 @@ Using the same `students` array, use `filter` to:
 1. **Filter students with grades above 80**.
 
 ```javascript
-const topStudents = 
+const topStudents = students.filter((student) => (student.grade) > 80)
 console.log(topStudents)
 ```
 
 2. **Filter students who are 21 or younger**.
 
 ```javascript
-const youngStudents =
+const youngStudents = students.filter((student) => (student.age) <= 21)
+console.log(youngStudents)
 ```
 
 ### Part 3: Combined `forEach` and `filter`
